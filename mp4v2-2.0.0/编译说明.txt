@@ -1,0 +1,11 @@
+1. windows编译
+  1）必备文件 platform_win32_impl.h  platform_win32.cpp Version.rc 上述三个文件下载源码时可能不存在，请另外下载
+     https://github.com/TechSmith/mp4v2
+  2）platform_win32_impl.h  platform_win32.cpp放入libplatform\  Version.rc放入vstudio9.0\libmp4v2\
+  3）release模式编译
+
+2. Linux编译
+  mkdir build;cd build
+  1）../configure --disable-debug --enable-optimize --prefix=/home/liaojunjun/workspace/mp4v2-2.0.0/_install
+  2）make
+  3) make install	
