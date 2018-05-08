@@ -237,7 +237,7 @@ CQEVENT(int32_t, __eventGroupMsg, 36)(int32_t subType, int32_t sendTime, int64_t
 		if (req == "登录器" || req == "登陆器")
 		{
 			string msg = "";
-			msg += "下载游戏登录器请在群文件【登录器】目录下载，微端和最新完整登录器均可,游戏客户端：http://code.taobao.org/svn/QYSG/trunk/www/index.htm";
+			msg += "下载游戏登录器请在群文件【登录器】目录下载，最新完整登录器,游戏客户端：https://jun384668960.github.io/download.htm";
 			CQ_sendGroupMsg(ac, fromGroup, msg.c_str());
 		}
 
@@ -398,7 +398,7 @@ CQEVENT(int32_t, __eventSystem_GroupMemberIncrease, 32)(int32_t subType, int32_t
 	if (!name.empty())
 	{
 		string msg = "欢迎成员：" + name + " 加入情义大家庭！";
-		msg += "\r\n下载游戏登录器请在群文件【登录器】目录下载，微端和最新完整登录器均可,游戏客户端：http://code.taobao.org/svn/QYSG/trunk/www/index.htm";
+		msg += "\r\n下载游戏登录器请在群文件【登录器】目录下载，最新完整登录器,游戏客户端：https://jun384668960.github.io/download.htm";
 		CQ_sendGroupMsg(ac, fromGroup, msg.c_str());
 		return EVENT_BLOCK;
 	}
